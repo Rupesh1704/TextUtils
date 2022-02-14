@@ -74,7 +74,7 @@ def analyze(request):
     if (charcount == 'on'):
         analyzed=('No. of characters given in the text are : '+str(len (djtext)))
         params = {'purpose': 'Characters Counted', 'analyzed_text': analyzed}
-        analyzed = analyzed + char
+        # analyzed = analyzed + char
         # return render(request, 'analyze.html', params)   
         djtext = analyzed
     
